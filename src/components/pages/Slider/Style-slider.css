@@ -1,0 +1,180 @@
+.slides{
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    position: absolute;
+    transition: all linear .25s;
+}
+
+.BTNs{
+    width: 120px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.BTN{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BTN:hover{
+    background-color: #444444;
+}
+
+.TOPimg{
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+}
+
+.img{
+   width: 60vw;
+   height: 60vh;
+}
+
+.TEXT{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 65px;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.description{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Arrow{
+    margin-left: 20px;
+}
+
+.ChangeSlider{
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+}
+
+.Mobile-ChangeSlider{
+    display: none;    
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+}
+
+.MbileImgSrc{
+    display: none;
+}
+
+/*.................... Fading animation ....................*/
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@media only screen and (max-width:1200px){
+    .TEXT{
+        padding: 40px;
+        padding-top: 25px;
+    }
+    .title{
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .link{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .slides{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .TOPimg{
+        position: relative;
+        width: 100vw;
+        height: 60vh;
+    }
+    .img{
+        width: 100vw;
+     }
+     .TEXT{
+        width: 80vw;
+        padding: 55px;
+     }
+    .ChangeSlider{
+        display: none;    
+    }
+    .Mobile-ChangeSlider{
+        display: block;    
+    }
+}
+
+@media only screen and (max-width:500px){
+    .PcImgSrc{
+        display: none;
+    }
+    .MbileImgSrc{
+        display: block;
+    }
+    .TEXT{
+        width: 77vw;
+        padding: 44PX;
+    }
+    
+}
+
+@media only screen and (max-width:380px){
+    .title{
+        font-size: 1.75rem;
+    }  
+    .TEXT{
+        width: 75vw;
+        padding: 40PX;
+        padding-top:55px ;
+    }
+}
