@@ -1,4 +1,4 @@
-![header image](https://raw.github.com/MAqwerty/interactive-pricing-component/master/Design.jpg)
+![header image](https://raw.github.com/MAqwerty/room-homepage/master/Design.jpg)
 
 # Getting Started with Create React App
 
